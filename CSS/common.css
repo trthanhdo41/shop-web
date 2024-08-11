@@ -791,4 +791,6 @@ input:not(:placeholder-shown) ~ .reset {
     }
 }
 
-
+.carousel-item {
+    transition: transform 2s ease-in-out;
+}

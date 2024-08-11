@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chi Tiết Sản Phẩm | Mây Concept</title>
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/detail.css" rel="stylesheet">
+    <link href="CSS/product.css" rel="stylesheet">
+    <link href="CSS/font-awesome/css/all.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white border-bottom">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <!-- Logo -->
+                <a href="#" class="navbar-brand">
+                    mâyconcept
+                </a>
+
+               <!-- Search Bar -->
+                <form class="form d-none d-lg-flex align-items-center">
+                    <button class="btn btn-outline-none">
+                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                    <input class="input form-control" placeholder="Tìm kiếm" required="" type="text">
+                    <button class="reset btn btn-outline-none" type="reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </form>
+
+                <!-- Icons -->
+                <div class="d-flex align-items-center">
+                <!-- 3lines Icon -->
+                <button class="btn btn-link text-dark d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i> 
+                </button>
+                <a href="#" class="btn btn-link text-dark"><i class="fas fa-shopping-cart"></i></a>
+                <a href="Login/login.html" class="btn btn-link text-dark"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+
+            <!-- Navi -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Nước Hoa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Mặt Nạ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Kem Dưỡng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Tinh Chất</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Đặc Trị</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Về Chúng Tôi</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-light py-2">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+                <ol class="breadcrumb mb-0 custom-breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Trang Chủ</a></li>
+                    <li class="breadcrumb-item"><a href="/index.html">Nước Hoa</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Dil: Một Đám Rêu Xanh</li>
+                    <li class="breadcrumb-item active" aria-current="page">Mây Concept</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Detail -->
+    <div class="container mt-4 product-detail-bg">
+        <div class="row" style="background-color: #f5f5f5;">
+            <!-- Product Image -->
+            <div class="col-md-6 position-relative">
+                <div class="main-image position-relative">
+                    <img src="imgs/spdil.jpg" alt="Dil: một đám rêu xanh" class="img-fluid" id="mainProductImage">
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                    <img src="imgs/detail1.jpg" class="img-thumbnail me-2 thumbnail" style="width: 80px;" alt="Thumbnail 1" onclick="changeImage(this)">
+                    <img src="imgs/detail2.jpg" class="img-thumbnail me-2 thumbnail" style="width: 80px;" alt="Thumbnail 2" onclick="changeImage(this)">
+                    <img src="imgs/detail3.png" class="img-thumbnail me-2 thumbnail" style="width: 80px;" alt="Thumbnail 3" onclick="changeImage(this)">
+                </div>
+            </div>
+            <!-- Product Info -->
+            <div class="product-info col-md-6">
+                <h6 class="text-uppercase text-muted" style="padding-top: 15px;">Nước hoa</h6>
+                <h2>Dil: một đám rêu xanh</h2>
+                <p>« Dil: một đám rêu xanh » là câu chuyện kể về một ngày mưa mới tạnh, về sự bừng tỉnh của rừng già sau một giấc ngủ dài mang theo bầu không khí ẩm ướt và hoang sơ. Với mỗi bước chân trên lớp lá ẩm, bạn sẽ cảm nhận được hơi thở rêu phong xanh rờn hòa quyện vào mùi đất ẩm ướt đem lại cảm giác tươi mới như tiếng thờ dài của rừng xanh sau cơn mưa đầu mùa. Khi những người khổng lồ khẽ rùng mình, giũ bỏ những giọt nước nặng trĩu trên tán lá, vươn vai đón chào sự trở lại của ánh nắng cũng là lúc mùi gỗ mềm mại dần trở nên khô ráo và vững chãi, khôi phục mùi hương đặc trưng của khu rừng, mùi gỗ vừa mộc mạc vừa thiêng liêng.</p>
+                <p><strong>Nốt hương:</strong> Gỗ đàn hương, rêu, gỗ tuyết tùng, rau mùi, chanh xanh và gừng</p>
+                <p><strong>Bảng thành phần:</strong> Alcohol Denat, Fragrance/Parfum, Linalool, Limonene, Geraniol, Isoeugenol, Citral, Color</p>
+                <h3 class="my-3">1.400.000đ</h3>
+                <div class="mb-3" style="margin-bottom: 2.5rem !important;">
+                    <label class="form-label">SELECT SIZE</label>
+                    <br/>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-dark rounded-pill me-1">100ML</button>
+                        <button type="button" class="btn btn-outline-dark rounded-pill mx-1">50ML</button>
+                        <button type="button" class="btn btn-outline-dark rounded-pill ms-1">30ML</button>
+                    </div>                                     
+                </div>
+                <div class="d-flex mb-3 quantity-group">
+                    <button class="btn btn-secondary quantity-btn px-4" type="button" onclick="changeQuantity(-1)" style="border-radius: 0; min-width: 150px; background-color: #ebebeb; color: #333; border-color: #ebebeb;">-</button>
+                    <span id="quantityDisplay" class="form-control text-center quantity-display" style="width: 100%; border-radius: 0; text-decoration: none; box-shadow: none; border: none;">1</span>
+                    <button class="btn btn-secondary quantity-btn px-4" type="button" onclick="changeQuantity(1)" style="border-radius: 0; min-width: 150px; background-color: #ebebeb; color: #333; border-color: #ebebeb;">+</button>
+                </div>                                       
+                <button class="btn btn-dark w-100 add-to-cart-btn" style="padding-top: 6px;">Thêm vào giỏ</button>
+            </div>
+        </div>
+
+    <!-- JavaScript -->
+    <script>
+        function changeImage(element) {
+            const mainImage = document.getElementById('mainProductImage');
+            mainImage.src = element.src;
+        }
+
+        function changeQuantity(amount) {
+            const quantityDisplay = document.getElementById('quantityDisplay');
+            const currentValue = parseInt(quantityDisplay.textContent);
+            if (!isNaN(currentValue)) {
+                const newValue = currentValue + amount;
+                if (newValue > 0) {
+                    quantityDisplay.textContent = newValue;
+                }
+            }
+        }
+    </script>
+
+    <div class="text-center mt-4">
+        <img src="/imgs/banner-detail.png" class="img-fluid w-100" alt="Banner Detail">
+    </div>
+
+    <!-- You May Also Like -->
+    <div class="mt-5">
+        <h4 class="text-center mb-4" style="font-weight: bold;">Bạn Cũng Có Thể Thích</h4>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-6 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="imgs/sp9.png" class="card-img-top img-fluid" alt="Soleil: nắng %#*@!">
+                                <div class="card-body">
+                                    <h5 class="card-title">Soleil: <br> nắng %#*@!</h5>
+                                    <p class="card-text"><strong>1.400.000đ</strong></p>
+                                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="imgs/sp3.png" class="card-img-top img-fluid" alt="Ko: chén thiền">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ko: <br> chén thiền</h5>
+                                    <p class="card-text"><strong>1.400.000đ</strong></p>
+                                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="imgs/sp5.png" class="card-img-top img-fluid" alt="Île de Rêve: chiếc hộp đêm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Île de Rêve: <br> chiếc hộp đêm</h5>
+                                    <p class="card-text"><strong>1.400.000đ</strong></p>
+                                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-6 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="imgs/sp6.png" class="card-img-top img-fluid" alt="Junkie: những kẻ say sưa">
+                                <div class="card-body">
+                                    <h5 class="card-title">Junkie: <br> những kẻ say sưa</h5>
+                                    <p class="card-text"><strong>1.400.000đ</strong></p>
+                                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="imgs/sp7.png" class="card-img-top img-fluid" alt="Mona: mơ mộng ngớ ngẩn">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mona: <br> mơ mộng ngớ ngẩn</h5>
+                                    <p class="card-text"><strong>1.400.000đ</strong></p>
+                                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="imgs/sp8.png" class="card-img-top img-fluid" alt="Sif: mùa 9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sif: <br> mùa 9</h5>
+                                    <p class="card-text"><strong>1.400.000đ</strong></p>
+                                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-6 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="imgs/sp4.png" class="card-img-top img-fluid" alt="Guru: một mẩu bình an">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guru: <br> một mẩu bình an</h5>
+                                    <p class="card-text"><strong>1.400.000đ</strong></p>
+                                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-6 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="imgs/sp5.png" class="card-img-top img-fluid" alt="Île de Rêve: chiếc hộp đêm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Île de Rêve: <br> chiếc hộp đêm</h5>
+                                    <p class="card-text"><strong>1.400.000đ</strong></p>
+                                    <button class="btn btn-primary">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-dark text-light py-4" style="width: 100vw; margin-left: calc(50% - 50vw);">
+    <div class="text-center row">
+        <!-- Địa chỉ -->
+        <div class="col-md-4 mb-3">
+            <h5 class="fw-bold">1/5 Pasteur</h5>
+            <p class="mb-0">Phường Nguyễn Thái Bình</p>
+            <p class="mb-0">Quận 1</p>
+            <p class="mb-0">Hồ Chí Minh</p>
+        </div>
+
+        <!-- Liên hệ -->
+        <div class="col-md-4 mb-3">
+            <h5 class="fw-bold">Liên hệ</h5>
+            <p class="mb-0">+84 2838215228</p>
+            <p class="mb-0">mayconceptvn@gmail.com</p>
+        </div>
+
+        <!-- Giờ mở cửa -->
+        <div class="col-md-4 mb-3">
+            <h5 class="fw-bold">Giờ mở cửa</h5>
+            <p class="mb-0">Thứ hai - Thứ bảy: 10:00 - 20:00</p>
+            <p class="mb-0">Chủ nhật: Đóng cửa</p>
+        </div>
+    </div>
+
+    <!-- Dòng phân cách -->
+    <hr class="bg-light">
+
+    <!-- Social Media Icons -->
+    <div class="d-flex justify-content-center mb-3">
+        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+    </div>
+
+    <!-- Thông tin công ty -->
+    <div class="text-center">
+        <p class="mb-0">Mây Concept LTD.CO Since 2016</p>
+    </div>
+</footer>
+
+
+</body>    
+</html>
